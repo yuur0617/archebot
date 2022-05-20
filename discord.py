@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import discord
 from discord.ext import commands
+import os
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='!', intents=intents)
@@ -230,4 +231,6 @@ async def 에버나이트(ctx):
             await ctx.send(f'```철 주괴{철주괴.text}\n```')        
     except:
         await ctx.send(f'--출력 오류--')
-bot.run("OTc2NTkxMjM0MTY2NTcxMDU4.G8SxA8.HXW7_epuo8KlwTBWn3pu_jbMjT0W-aX2SK45Jg")
+        
+access_token = os.environ["BOT_TOKEN"]
+bot.run("access_token")
