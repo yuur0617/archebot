@@ -53,7 +53,7 @@ async def 하제(ctx):
             await ctx.send(f'```철 주괴{철주괴.text}\n```')  
 
         await ctx.send(f'하리하라 대륙')
-        for 옷감 in 동_옷감:
+        for 옷감 in 동_옷감: 
             await ctx.send(f'```옷감{옷감.text}\n```')    
         for 가죽 in 동_가죽:
             await ctx.send(f'```가죽{가죽.text}\n```')
